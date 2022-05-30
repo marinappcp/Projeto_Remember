@@ -1,0 +1,526 @@
+<!-- ========================================================================================================================== -->
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= PROJETE 2021 - EQUIPE 2301 - REMEMBER :) =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<!-- =-=-=-=-=-=-=-=-=-= ALUNOS: JULIANO, LINDSEY, MARINA, MIGUEL      ORIENTADORA: ANA LETÌCIA =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<!-- ========================================================================================================================== -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remember</title>
+    <link rel="stylesheet" href="remember_dados.css">
+</head>
+
+<body>
+
+    <!-- ----------------------------------- INFORMAÇÕES FIREBASE ------------------------------------ -->
+    
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+        <script>
+        /**/ var anonima_config = (function (){
+
+        var firebaseConfig = {
+
+            apiKey: "AIzaSyDZjIYSu8BUhfBs_MKpeO_EImk8ZTriQ30",
+            authDomain: "outro-db123.firebaseapp.com",
+            databaseURL: "https://outro-db123-default-rtdb.firebaseio.com",
+            projectId: "outro-db123",
+            storageBucket: "outro-db123.appspot.com",
+            messagingSenderId: "312112921257",
+            appId: "1:312112921257:web:746b884b21e8dc2fe4c7b8",
+            measurementId: "G-DPP2FHK3RK"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+
+            })
+
+            anonima_config();
+
+            var database = firebase.database();
+            var storage = firebase.storage(); /**/
+
+            
+            /*// Import the functions you need from the SDKs you need
+                import { initializeApp } from "firebase/app";
+                import { getAnalytics } from "firebase/analytics";
+                // TODO: Add SDKs for Firebase products that you want to use
+                // https://firebase.google.com/docs/web/setup#available-libraries
+
+                // Your web app's Firebase configuration
+                // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                const firebaseConfig = {
+                apiKey: "AIzaSyCneeWgIaZuOvqUrLTeAiIRvGd9PJFP3YY",
+                authDomain: "teste-66d07.firebaseapp.com",
+                databaseURL: "https://teste-66d07-default-rtdb.firebaseio.com",
+                projectId: "teste-66d07",
+                storageBucket: "teste-66d07.appspot.com",
+                messagingSenderId: "421233705310",
+                appId: "1:421233705310:web:bc7f4546a123683e2a8fcf",
+                measurementId: "G-D1JJB3QCL6"
+                };
+
+                // Initialize Firebase
+                const app = initializeApp(firebaseConfig);
+                const analytics = getAnalytics(app); */
+            
+
+        </script>
+
+        <script src="remember_dados.js"></script>
+
+    <!-- --------------------------------- FIM INFORMAÇÕES FIREBASE --------------------------------- -->
+
+
+    <!-- --------------------------------- INFORMAÇÕES DO CABEÇALHO --------------------------------- -->
+    <header>
+        <h2> Alterar dados </h2>
+        <h4 id="subtitulo">Cada seção indica um compartimento do Dispenser.</h4>
+    </header>
+    <!-- --------------------------------- FIM INFORMAÇÕES DO CABEÇALHO --------------------------------- -->
+
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 1 ------------------------------------ -->
+    <section id="comp1">
+    <div id="comp1_medic">
+        <h4 id="hcomp1">Compartimento 1</h4> 
+        <label> Medicamento: </label>
+        <input type="text" name="txtmedicamento1" id="txtmedicamento1">
+        <br>
+    </div>
+    <div id="comp1_hor">
+        <p> <label> Horário: </label> 
+        <input type="text" name="txthora1" id="txthora1"> :
+        <input type="text" name="txtminuto1" id="txtminuto1">
+    </p>
+    </div>
+    <div id="comp1_data">
+        <p> <label> Data: </label> 
+            <input type="text" name="txtdia1" id="txtdia1"> /
+            <input type="text" name="txtmes1" id="txtmes1"> 
+        </p>
+    </div>
+
+    <div>
+        <p> Clique para salvar todas as informações: 
+        <button onclick = "comp1()"> Salvar </button></p>
+    </div>
+
+    </section>
+    <br>
+
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 1 ---------------------------------- -->
+    
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 2 ------------------------------------ -->    
+    <section id="comp2">
+        <div id="comp2_medic">
+            <h4 id="hcomp2">Compartimento 2</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento2" id="txtmedicamento2">
+            <br>
+        </div>
+        <div id="comp2_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora2" id="txthora2"> :
+            <input type="text" name="txtminuto2" id="txtminuto2">
+        </p>
+        </div>
+        <div id="comp2_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia2" id="txtdia2"> /
+                <input type="text" name="txtmes2" id="txtmes2"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp2()"> Salvar </button></p>
+        </div>
+    
+    </section>
+    <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 2 ---------------------------------- -->
+        
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 3 ------------------------------------ -->
+    <section id="comp3">
+        <div id="comp3_medic">
+            <h4 id="hcomp3">Compartimento 3</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento3" id="txtmedicamento3">
+            <br>
+        </div>
+        <div id="comp3_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora3" id="txthora3"> :
+            <input type="text" name="txtminuto3" id="txtminuto3">
+        </p>
+        </div>
+        <div id="comp3_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia3" id="txtdia3"> /
+                <input type="text" name="txtmes3" id="txtmes3"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp3()"> Salvar </button></p>
+        </div>
+    
+    </section>
+    <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 3 ---------------------------------- -->
+        
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 4 ------------------------------------ -->
+    <section id="comp4">
+        <div id="comp4_medic">
+            <h4 id="hcomp4">Compartimento 4</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento4" id="txtmedicamento4">
+            <br>
+        </div>
+        <div id="comp4_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora4" id="txthora4"> :
+            <input type="text" name="txtminuto4" id="txtminuto4">
+        </p>
+        </div>
+        <div id="comp4_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia4" id="txtdia4"> /
+                <input type="text" name="txtmes4" id="txtmes4"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp4()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 4 ---------------------------------- -->
+       
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 5 ------------------------------------ -->
+    <section id="comp5">
+        <div id="comp5_medic">
+            <h4 id="hcomp5">Compartimento 5</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento5" id="txtmedicamento5">
+            <br>
+        </div>
+        <div id="comp5_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora5" id="txthora5"> :
+            <input type="text" name="txtminuto5" id="txtminuto5">
+        </p>
+        </div>
+        <div id="comp5_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia5" id="txtdia5"> /
+                <input type="text" name="txtmes5" id="txtmes5"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp5()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 5 ---------------------------------- -->
+        
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 6 ------------------------------------ -->
+     <section id="comp6">
+        <div id="comp6_medic">
+            <h4 id="hcomp6">Compartimento 6</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento6" id="txtmedicamento6">
+            <br>
+        </div>
+        <div id="comp6_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora6" id="txthora6"> :
+            <input type="text" name="txtminuto6" id="txtminuto6">
+        </p>
+        </div>
+        <div id="comp6_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia6" id="txtdia6"> /
+                <input type="text" name="txtmes6" id="txtmes6"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp6()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 6 ---------------------------------- -->
+    
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 7 ------------------------------------ -->
+    <section id="comp7">
+        <div id="comp7_medic">
+            <h4 id="hcomp7">Compartimento 7</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento7" id="txtmedicamento7">
+            <br>
+        </div>
+        <div id="comp7_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora7" id="txthora7"> :
+            <input type="text" name="txtminuto7" id="txtminuto7">
+        </p>
+        </div>
+        <div id="comp7_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia7" id="txtdia7"> /
+                <input type="text" name="txtmes7" id="txtmes7"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp7()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 7 ---------------------------------- -->
+        
+    
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 8 ------------------------------------ -->
+    <section id="comp8">
+        <div id="comp8_medic">
+            <h4 id="hcomp8">Compartimento 8</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento8" id="txtmedicamento8">
+            <br>
+        </div>
+        <div id="comp8_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora8" id="txthora8"> :
+            <input type="text" name="txtminuto8" id="txtminuto8">
+        </p>
+        </div>
+        <div id="comp8_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia8" id="txtdia8"> /
+                <input type="text" name="txtmes8" id="txtmes8"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp8()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 8 ---------------------------------- -->
+        
+
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 9 ------------------------------------ -->
+    <section id="comp9">
+        <div id="comp9_medic">
+            <h4 id="hcomp9">Compartimento 9</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento9" id="txtmedicamento9">
+            <br>
+        </div>
+        <div id="comp9_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora9" id="txthora9"> :
+            <input type="text" name="txtminuto9" id="txtminuto9">
+        </p>
+        </div>
+        <div id="comp9_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia9" id="txtdia9"> /
+                <input type="text" name="txtmes9" id="txtmes9"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp9()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 9 ---------------------------------- -->
+        
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 10 ------------------------------------ -->
+      <section id="comp10">
+        <div id="comp10_medic">
+            <h4 id="hcomp10">Compartimento 10</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento10" id="txtmedicamento10">
+            <br>
+        </div>
+        <div id="comp10_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora10" id="txthora10"> :
+            <input type="text" name="txtminuto10" id="txtminuto10">
+        </p>
+        </div>
+        <div id="comp10_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia10" id="txtdia10"> /
+                <input type="text" name="txtmes10" id="txtmes10"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp10()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 10 ---------------------------------- -->
+        
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 11 ------------------------------------ -->
+    <section id="comp11">
+        <div id="comp11_medic">
+            <h4 id="hcomp11">Compartimento 11</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento11" id="txtmedicamento11">
+            <br>
+        </div>
+        <div id="comp11_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora11" id="txthora11"> :
+            <input type="text" name="txtminuto11" id="txtminuto11">
+        </p>
+        </div>
+        <div id="comp11_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia11" id="txtdia11"> /
+                <input type="text" name="txtmes11" id="txtmes11"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp11()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 11 ---------------------------------- -->
+    
+     
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 12------------------------------------ -->
+    <section id="comp12">
+        <div id="comp12_medic">
+            <h4 id="hcomp12">Compartimento 12</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento12" id="txtmedicamento12">
+            <br>
+        </div>
+        <div id="comp12_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora12" id="txthora12"> :
+            <input type="text" name="txtminuto12" id="txtminuto12">
+        </p>
+        </div>
+        <div id="comp12_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia12" id="txtdia12"> /
+                <input type="text" name="txtmes12" id="txtmes12"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp12()"> Salvar </button></p>
+        </div>
+    
+    </section>
+    <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 12 ---------------------------------- -->
+        
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 13 ------------------------------------ -->
+    <section id="comp13">
+        <div id="comp13_medic">
+            <h4 id="hcomp13">Compartimento 13</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento13" id="txtmedicamento13">
+            <br>
+        </div>
+        <div id="comp13_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora13" id="txthora13"> :
+            <input type="text" name="txtminuto13" id="txtminuto13">
+        </p>
+        </div>
+        <div id="comp13_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia13" id="txtdia13"> /
+                <input type="text" name="txtmes13" id="txtmes13"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp13()"> Salvar </button></p>
+        </div>
+    
+    </section>
+    <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 13 ---------------------------------- -->
+        
+    <!-- ------------------------------------ INFORMAÇÕES DO COMP. 14 ------------------------------------ -->
+    <section id="comp14">
+        <div id="comp14_medic">
+            <h4 id="hcomp14">Compartimento 14</h4> 
+            <label> Medicamento: </label>
+            <input type="text" name="txtmedicamento14" id="txtmedicamento14">
+            <br>
+        </div>
+        <div id="comp14_hor">
+            <p> <label> Horário: </label> 
+            <input type="text" name="txthora14" id="txthora14"> :
+            <input type="text" name="txtminuto14" id="txtminuto14">
+        </p>
+        </div>
+        <div id="comp14_data">
+            <p> <label> Data: </label> 
+                <input type="text" name="txtdia14" id="txtdia14"> /
+                <input type="text" name="txtmes14" id="txtmes14"> 
+            </p>
+        </div>
+    
+        <div>
+            <p> Clique para salvar todas as informações: 
+            <button onclick = "comp14()"> Salvar </button></p>
+        </div>
+    
+        </section>
+        <br>
+    
+    <!-- ---------------------------------- FIM INFORMAÇÕES DO COMP. 14 ---------------------------------- -->
+       
+</body>
+</html>

@@ -1,0 +1,682 @@
+/* ========================================================================================================================== */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= PROJETE 2021 - EQUIPE 2301 - REMEMBER :) =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-=-=-=-=-=-= ALUNOS: JULIANO, LINDSEY, MARINA, MIGUEL      ORIENTADORA: ANA LETÌCIA =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* ========================================================================================================================== */
+
+/* --------------------------------------- FORMATAÇÃO BODY --------------------------------------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+/* ------------------------------------- FORMATAÇÃO TÍTULOS -------------------------------------- */
+h2 {
+    font: normal 16pt;
+    color: rgb(95, 171, 214);    
+    text-align: center;
+}
+#subtitulo {
+    font: normal 12pt;
+    color: rgb(94, 152, 185);
+    text-align: center;
+}
+
+/* -------------------------------------- FORMATAÇÃO COMP. 1 -------------------------------------- */
+#hcomp1 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp1 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento1 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora1 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto1 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia1 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes1 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 1 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 2 -------------------------------------- */
+#hcomp2 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp2 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento2 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora2 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto2 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia2 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes2 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 2 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 3 -------------------------------------- */
+#hcomp3 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp3 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento3 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora3 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto3 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia3 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes3 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 3 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 4 -------------------------------------- */
+#hcomp4 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp4 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento4 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora4 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto4 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia4 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes4 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 4 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 5 -------------------------------------- */
+#hcomp5 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp5 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento5 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora5 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto5 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia5 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes5 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 5 ------------------------------------ */
+
+
+/* -------------------------------------- FORMATAÇÃO COMP. 6 -------------------------------------- */
+#hcomp6 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp6 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento6 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora6 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto6 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia6 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes6 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 6 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 7 -------------------------------------- */
+#hcomp7 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp7 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento7 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora7 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto7 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia7 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes7 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 7 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 8 -------------------------------------- */
+#hcomp8 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp8 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento8 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora8 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto8 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia8 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes8 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 8 ------------------------------------ */
+
+
+/* -------------------------------------- FORMATAÇÃO COMP. 9 -------------------------------------- */
+#hcomp9 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp9 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento9 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora9 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto9 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia9 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes9 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 9 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 10 -------------------------------------- */
+#hcomp10 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp10 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento10 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora10 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto10 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia10 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes10 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 13 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 11 -------------------------------------- */
+#hcomp11 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp11 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento11 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora11 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto11 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia11 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes11 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 13 ------------------------------------ */
+
+
+/* -------------------------------------- FORMATAÇÃO COMP. 12 -------------------------------------- */
+#hcomp12 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp12 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento12 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora12 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto12 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia12 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes12 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 13 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 13 -------------------------------------- */
+#hcomp13 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp13 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento13 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora13 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto13 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia13 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes13 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 13 ------------------------------------ */
+
+/* -------------------------------------- FORMATAÇÃO COMP. 14 -------------------------------------- */
+#hcomp14 {
+    font: italic 14pt;
+    color: rgb(50, 134, 182);
+    text-align: center;
+}
+#comp14 {
+    border: 2px ridge rgb(206, 224, 236); 
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 90%; 
+}
+#txtmedicamento14 {
+    width: 120px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+
+}
+#txthora14 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtminuto14 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtdia14 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+#txtmes14 {
+    width: 20px;
+    border: 1px double rgb(130, 138, 143); 
+    border-radius: 4px;
+    background-color: #b4e0e7;
+}
+
+/* ------------------------------------ FIM FORMATAÇÃO COMP. 13 ------------------------------------ */
